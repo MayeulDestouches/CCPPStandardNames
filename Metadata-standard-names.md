@@ -21,6 +21,7 @@
 * [GFS_typedefs_GFS_radtend_type](#gfs_typedefs_gfs_radtend_type)
 * [GFS_typedefs_GFS_grid_type](#gfs_typedefs_gfs_grid_type)
 * [GFS_typedefs_GFS_stateout_type](#gfs_typedefs_gfs_stateout_type)
+* [Met Office: linear variable changes](#met-office-linear-variable-changes)
 
 ## dimensions
 Dimension standard names may come in sets of six related standard names for each dimension:
@@ -2139,3 +2140,18 @@ Variables related to the compute environment
     * `real(kind=kind_phys)`: units = m s-1
 * `y_wind_of_new_state`: Y wind of new state
     * `real(kind=kind_phys)`: units = m s-1
+## Met Office: linear variable changes
+* `effective_cloud_liquid_water_fraction_in_atmosphere_layer_at_top_interfaces`: Effective volume fraction of cloud liquid water, for each model layer, for use by the moisture incrementing operator that splits total water into water vapour, cloud ice and cloud liquid water contributions.
+    * `real(kind=kind_phys)`: units = fraction
+* `effective_cloud_ice_fraction_in_atmosphere_layer_at_top_interfaces`: Effective volume fraction of cloud ice, for each model layer, for use by the moisture incrementing operator that splits total water into water vapour, cloud ice and cloud liquid water contributions.
+    * `real(kind=kind_phys)`: units = fraction
+* `reciprocal_of_moisture_control_variable_determinant_at_top_interfaces`: Reciprocal of the determinant of the linear variable change relating [total water mixing ratio wrt moist air and condensed water] and [potential temperature] increments to the associated [moisture control variable] and [virtual potential temperature] increment. 
+    * `real(kind=kind_phys)`: units = 1
+* `moisture_control_variables_coefficient_1_1_at_top_interfaces`: Contribution of the total water mixing ratio wrt moist air and condensed water increment to the associated moisture control variable increment in the linear moisture control variable change. 
+    * `real(kind=kind_phys)`: units = 1
+* `moisture_control_variables_coefficient_1_2_at_top_interfaces`: Contribution of the potential temperature increment to the associated moisture control variable increment in the linear moisture control variable change. 
+    * `real(kind=kind_phys)`: units = K-1
+* `moisture_control_variables_coefficient_2_1_at_top_interfaces`: Contribution of the total water mixing ratio wrt moist air and condensed water increment to the associated virtual potential temperature increment in the linear moisture control variable change. 
+    * `real(kind=kind_phys)`: units = K
+* `moisture_control_variables_coefficient_2_2_at_top_interfaces`: Contribution of the potential temperature increment to the associated virtual potential temperature increment in the linear moisture control variable change. 
+    * `real(kind=kind_phys)`: units = 1

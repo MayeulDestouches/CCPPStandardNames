@@ -3309,4 +3309,34 @@
          <type kind="kind_phys" units="m s-1">real</type>
       </standard_name>
    </section>
+   <section name="Met Office: linear variable changes">
+      <standard_name name="effective_cloud_liquid_water_fraction_in_atmosphere_layer_at_top_interfaces"
+                     long_name="Effective volume fraction of cloud liquid water, for each model layer, for use by the moisture incrementing operator that splits total water into water vapour, cloud ice and cloud liquid water contributions.">
+      <type kind="kind_phys" units="fraction">real</type>
+      </standard_name>
+      <standard_name name="effective_cloud_ice_fraction_in_atmosphere_layer_at_top_interfaces"
+                     long_name="Effective volume fraction of cloud ice, for each model layer, for use by the moisture incrementing operator that splits total water into water vapour, cloud ice and cloud liquid water contributions.">
+      <type kind="kind_phys" units="fraction">real</type>
+      </standard_name>
+      <standard_name name="reciprocal_of_moisture_control_variable_determinant_at_top_interfaces"
+                     long_name="Reciprocal of the determinant of the linear variable change relating [total water mixing ratio wrt moist air and condensed water] and [potential temperature] increments to the associated [moisture control variable] and [virtual potential temperature] increment. ">
+      <type kind="kind_phys" units="1">real</type>
+      </standard_name>
+      <standard_name name="moisture_control_variables_coefficient_1_1_at_top_interfaces"
+                     long_name="Contribution of the total water mixing ratio wrt moist air and condensed water increment to the associated moisture control variable increment in the linear moisture control variable change. ">
+      <type kind="kind_phys" units="1">real</type>
+      </standard_name>
+      <standard_name name="moisture_control_variables_coefficient_1_2_at_top_interfaces"
+                     long_name="Contribution of the potential temperature increment to the associated moisture control variable increment in the linear moisture control variable change. ">
+      <type kind="kind_phys" units="K-1">real</type>
+      </standard_name>
+      <standard_name name="moisture_control_variables_coefficient_2_1_at_top_interfaces"
+                     long_name="Contribution of the total water mixing ratio wrt moist air and condensed water increment to the associated virtual potential temperature increment in the linear moisture control variable change. ">
+      <type kind="kind_phys" units="K">real</type>
+      </standard_name>
+      <standard_name name="moisture_control_variables_coefficient_2_2_at_top_interfaces"
+                     long_name="Contribution of the potential temperature increment to the associated virtual potential temperature increment in the linear moisture control variable change. ">
+      <type kind="kind_phys" units="1">real</type>
+      </standard_name>
+   </section>
 </standard_names>
